@@ -108,6 +108,10 @@ nav a:hover {
     margin-bottom: 20px;
 }
 
+.hero-content h1 span {
+    color:blue;
+}
+
 .hero-content p {
     font-size: 1rem;
     color: #666;
@@ -183,12 +187,40 @@ nav a:hover {
 /* Interactive Banner Section */
 .interactive-banner {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 50px;
-    background-color: #f0f0f0;
-    position: relative;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f0f0f0; /* Adjust as needed */
 }
+
+.banner-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.banner-media {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.banner-video, .banner-image {
+    flex: 1;
+    margin: 10px;
+}
+
+.banner-video video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: add rounded corners */
+}
+
+.banner-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Optional: add rounded corners */
+}
+
 
 .banner-content {
     flex: 1;

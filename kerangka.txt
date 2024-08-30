@@ -1,0 +1,195 @@
+!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Technology</title>
+    <link rel="stylesheet" href="css/blog.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <header>
+        <div class="logo">
+            <a href="index.html" class="logo-webtech">
+                <img src="img/IMAGES/logo.png" alt="Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="detail.html">Detail Blog</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="dashboard.html">Dashboard Admin</a></li>
+            </ul>
+        </nav>
+        <button class="header-button">Login/Register</button>
+    </header>
+    <!-- End Navigation -->
+
+       <!-- Social Media Section -->
+        <section class="social-media">
+            <h2>Contact Us</h2>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank" class="social-icon">
+                    <img src="img/SOCIAL_MEDIA/Black and White/facebook.png" alt="Facebook">
+                </a>
+                <a href="https://twitter.com" target="_blank" class="social-icon">
+                    <img src="img/SOCIAL_MEDIA/Black and White/twitter.png" alt="Twitter">
+                </a>
+                <a href="https://blogger.com" target="_blank" class="social-icon">
+                    <img src="img/SOCIAL_MEDIA/Black and White/blogger.png" alt="Instagram">
+                </a>
+            </div>
+            </section>
+            <!-- End Social Media Section -->
+        
+            <!-- Footer Section -->
+            <footer>
+            <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+            <p>Designed by: Dhiaraqi A Khaizuran</p>
+            </footer>
+            <!-- End Footer Section -->
+            </body>
+        
+        </html>
+        
+
+        css
+
+        * {
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+}
+
+/* Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo a {
+    margin-left: 10px;
+    text-decoration: none;
+    font-size: var(--2rem);
+    font-weight: bold;
+    color: white;
+}
+
+nav {
+    display: flex;
+    flex-grow: 1; /* Make nav utilize available space */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    color: blue;
+    background-color: #f0f0f0;
+}
+
+/* Header Button */
+.header-button {
+    background-color: #007BFF;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    font-size: var(--1setengah);
+    font-weight: var(--font-bold);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-left: 20px;
+    margin-right: 250px;
+}
+
+.header-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.header-button:active {
+    background-color: #004085;
+    transform: scale(1);
+}
+
+.header-button:focus {
+    outline: 2px solid #0056b3;
+    outline-offset: 2px;
+}
+
+
+/* Social Media Section */
+.social-media {
+    padding: 50px;
+    background-color: #333; /* Background color for the section */
+    color: #fff; /* Text color */
+    text-align: center;
+}
+
+.social-media h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon img {
+    width: 40px;
+    height: 40px;
+    transition: opacity 0.3s;
+}
+
+.social-icon img:hover {
+    opacity: 0.8;
+}
+
+/* Footer Section */
+footer {
+    padding: 20px;
+    background-color: #333; /* Background color for the footer */
+    color: #fff; /* Text color */
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
